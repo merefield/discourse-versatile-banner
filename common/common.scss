@@ -45,7 +45,10 @@
 }
 
 .banner-box {
-  width: $large-width;
+  padding: .5rem;
+  border-radius: .15rem;
+  border: 1px solid var(--primary-low);
+  width: calc($large-width - 40px);
   max-width: calc(100% - 16px);
   margin: 0 auto;
   margin-top: 20px;
@@ -62,7 +65,7 @@
     position: absolute;
     z-index: z("base") + 1;
     right: 0;
-    top: 2px;
+    top: 8px;
 
     .close,
     .toggle {
@@ -71,7 +74,7 @@
       border: none;
       color: #646464;
       background: transparent;
-      font-size: 1.5157em;
+      font-size: 1.2em;
       cursor: pointer;
 
       svg {
@@ -102,7 +105,7 @@
   h2,
   h3 {
     text-align: center;
-    color: var(--banner-secondary-text);
+    color: var(--primary);
   }
 
   a {
@@ -110,10 +113,10 @@
   }
 
   .section-header {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 
     .x-title {
-      padding: 25px 65px;
+      padding: 10px 65px;
       margin: 0;
     }
 
@@ -140,7 +143,7 @@
       position: relative;
       min-height: 1px;
       padding: 0px 15px 30px;
-      text-align: center;
+      text-align: left;
 
       .icon {
         font-size: 70px;
@@ -200,10 +203,12 @@
   .second_column {
     flex-grow: 1;
     flex-basis: 0;
+    text-align: left;
   }
 } @else {
   .second_column {
     width: $second_column_size;
+    text-align: left;
   }
 }
 
