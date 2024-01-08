@@ -1,6 +1,9 @@
 show_for_members:
   type: bool
   default: true
+anon_slice_of_daily_summary:
+  type: integer
+  default: 400
 show_for_anon:
   type: bool
   default: true

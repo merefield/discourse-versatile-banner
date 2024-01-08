@@ -31,7 +31,7 @@ export default class VersatileBanner extends Component {
       icon: convertIconClass(settings.first_column_icon),
     },
     {
-      content: this.site.daily_summary,
+      content: this.currentUser ? this.site.daily_summary : this.site.daily_summary.slice(0, settings.anon_slice_of_daily_summary) + "  " +  I18n.t(themePrefix("sign_up.title")),
       class: "second_column",
       icon: convertIconClass(settings.second_column_icon),
     },

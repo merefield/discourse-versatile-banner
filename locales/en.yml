@@ -7,6 +7,8 @@ en:
     title: Expand/Collapse the banner
     collapse_label: Collapse
     expand_label: Expand
+  sign_up:
+    title:   ... <a href="/login">log in or sign up</a> to see the rest of the Daily Buzz!
   theme_metadata:
     settings:
       show_for_members: "Display the banner for users logged into the forum"
