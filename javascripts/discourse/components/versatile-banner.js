@@ -58,6 +58,7 @@ export default class VersatileBanner extends Component {
 
   get displayForUser() {
     return (
+      this.currentUser?.staff ||
       (settings.show_for_members && this.currentUser) ||
       (settings.show_for_anon && !this.currentUser)
     );
