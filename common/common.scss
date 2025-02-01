@@ -13,7 +13,7 @@
 #main > div {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+
 
   .above-site-header-outlet {
     order: -4;
@@ -49,8 +49,8 @@
   padding: .5rem;
   border-radius: .15rem;
   border: 1px solid var(--primary-low);
-  width: calc($large-width - 40px);
-  max-width: calc(100% - 16px);
+  width: calc($large-width - 42px);
+  max-width: calc(100% - 18px);
   margin: 0 auto;
   margin-top: 20px;
   color: var(--banner-primary-text);
