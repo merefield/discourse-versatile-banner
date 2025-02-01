@@ -13,6 +13,7 @@
 #main > div {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   .above-site-header-outlet {
     order: -4;
