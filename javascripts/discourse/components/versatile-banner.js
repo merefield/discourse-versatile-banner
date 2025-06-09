@@ -69,7 +69,8 @@ export default class VersatileBanner extends Component {
 
     if (
       settings.display_on_homepage &&
-      this.router.currentRouteName === `discovery.${defaultHomepage()}`
+      (this.router.currentRouteName === `discovery.${defaultHomepage()}` ||
+        this.router.currentRouteName === "tags.intersection" )
     ) {
       return true;
     }
